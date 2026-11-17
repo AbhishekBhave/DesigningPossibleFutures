@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #FBF9F5;
+  --bg-surface: #F3EFE7;
+  --bg-card: #FFFFFF;
+  --border-hairline: #E2DDD3;
+  --border-strong: #C9C1B2;
+  --ink-primary: #1C1917;
+  --ink-secondary: #57534E;
+  --ink-muted: #78716C;
+  --accent-lapis: #1E3A8A;
+  --accent-terracotta: #9A3412;
+  --accent-forest: #14532D;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-editorial {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.font-body {
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-coord {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Clean custom horizontal viewport without clunky OS scrollbars */
+.timeline-scroll-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.timeline-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Subtle archival paper grid ruling */
+.archival-grid-bg {
+  background-image: linear-gradient(
+      to right,
+      rgba(28, 25, 23, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(28, 25, 23, 0.025) 1px, transparent 1px);
+  background-size: 96px 96px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

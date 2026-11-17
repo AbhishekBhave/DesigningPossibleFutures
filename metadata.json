@@ -1,0 +1,6 @@
+{
+  "name": "Three Horizons",
+  "description": "An editorial horizontal career timeline exploring Technology Consulting & Product Management, Educational Entrepreneurship, and Technology & Ethics Professorship.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
